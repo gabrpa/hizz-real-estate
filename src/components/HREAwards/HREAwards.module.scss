@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.awardsSection {
+  background-color: #e4e2d7;
+  height: 100vh;
+  max-width: 100%;
+
+  div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #646257;
+    margin: 30px;
+  }
+
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    color: #646257;
+  }
+
+  h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #646257;
+    margin: 30px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+  }
+}

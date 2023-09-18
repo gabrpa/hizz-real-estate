@@ -1,0 +1,24 @@
+.valuation {
+  display: flex;
+  background-color: #afac9b;
+  height: 100vh;
+  max-width: 100vw;
+  text-align: center;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 100px;
+
+
+  .valuation__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #646257;
+
+    // flex-wrap: wrap;
+    // align-items: center;
+    // align-content: center;
+  }
+}
+
