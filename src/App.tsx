@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
 import HREHeader from './components/HREHeader';
 import HREAwards from './components/HREAwards';
 import HREProperties from './components/HREProperties';
-import { RecoilRoot } from 'recoil';
 import HREValuation from './components/HREValuation';
+import { RecoilRoot } from 'recoil';
+import HREReasons from './components/HREReasons';
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
       <HREAwards/>
       <HREProperties/>
       <HREValuation/>
+      <HREReasons/>
     </RecoilRoot>
   );
 }

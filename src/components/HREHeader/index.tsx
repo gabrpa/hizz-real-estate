@@ -1,4 +1,4 @@
-import HREButton from '../HREButton'
+import HREButton from '../atoms/HREButton'
 import styles from './HREHeader.module.scss'
 
 export default function HREHeader() {

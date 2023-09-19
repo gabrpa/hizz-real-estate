@@ -1,7 +1,7 @@
 import { Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import useListProperties from '../../state/hooks/useListProperties'
 import styles from './HREProperties.module.scss'
-import HREButton from '../HREButton';
+import HREButton from '../atoms/HREButton';
 
 export default function HREProperties() {
 

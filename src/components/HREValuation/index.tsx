@@ -1,6 +1,6 @@
 import styles from './HREValuation.module.scss'
 import { Typography } from "@mui/material";
-import HREButton from "../HREButton";
+import HREButton from "../atoms/HREButton";
 
 export default function HREValuation() {
   return (
