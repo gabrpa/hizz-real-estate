@@ -10,6 +10,7 @@ export default function HREButton(props: any) {
         color: '#e4e2d7',
         borderColor: '#e4e2d7',
       }}
+      onClick={props.onClick}
       >
       {props.value}
     </Button>

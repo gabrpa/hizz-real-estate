@@ -2,10 +2,12 @@ import { Card, CardActions, CardContent, CardMedia, Typography } from '@mui/mate
 import useListProperties from '../../state/hooks/useListProperties'
 import styles from './HREProperties.module.scss'
 import HREButton from '../atoms/HREButton';
+import { useNavigate } from 'react-router-dom';
 
 export default function HREProperties() {
 
   const properties = useListProperties();
+  const navigate = useNavigate();
 
   return (
     <section className={styles.properties}>
@@ -49,7 +51,9 @@ export default function HREProperties() {
             </CardContent>
             <CardActions>
               <HREButton
-                value={'Click here to make an offer!'}/>
+                value={'Click here to make an offer!'}
+                onClick={() => navigate('/contact')}
+                />
             </CardActions>
           </Card>
           ))}

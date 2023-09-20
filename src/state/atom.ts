@@ -1,5 +1,6 @@
 import { atom } from "recoil";
 import IProperties from "../interfaces/properties";
+import ITestimonials from "../interfaces/testimonials";
 
 export const propertiesState = atom<IProperties[]>({
   key: 'propertiesState',
@@ -33,5 +34,23 @@ export const propertiesState = atom<IProperties[]>({
       price: '$1009,000',
       image: 'https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F1253i215%2F8e3yaw2f9s8j4g2b6sam4p1a06i215&option=N&h=472&permitphotoenlargement=false'
     },
+  ]
+})
+
+export const testimonialsState = atom<ITestimonials[]>({
+  key: 'testimonialsState',
+  default: [
+    {
+      testimonial: "Boost your product and service's credibility by adding testimonials from your clients.",
+      name: `Jeffries and Madison`
+      },
+      {
+        testimonial: "Boost your product and service's credibility by adding testimonials from your clients.",
+        name: `Jeffries and Madison`
+      },
+      {
+        testimonial: "Boost your product and service's credibility by adding testimonials from your clients.",
+        name: `Jeffries and Madison`
+      },
   ]
 })

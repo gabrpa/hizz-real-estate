@@ -1,8 +1,12 @@
 import styles from './HREValuation.module.scss'
 import { Typography } from "@mui/material";
 import HREButton from "../atoms/HREButton";
+import { useNavigate } from 'react-router-dom';
 
 export default function HREValuation() {
+
+  const navigate = useNavigate();
+
   return (
     <section className={styles.valuation}>
       <div>
@@ -28,6 +32,7 @@ export default function HREValuation() {
       </div>
       <HREButton
         value={'FIND OUT HOW'}
+        onClick={() => navigate('/contact')}
       />
     </section>
   )

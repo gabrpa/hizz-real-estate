@@ -1,20 +1,17 @@
-import HREHeader from './components/HREHeader';
-import HREAwards from './components/HREAwards';
-import HREProperties from './components/HREProperties';
-import HREValuation from './components/HREValuation';
-import { RecoilRoot } from 'recoil';
-import HREReasons from './components/HREReasons';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HREPage from './components/pages/HREPage';
+import HREForm from './components/atoms/HREForm';
 
 function App() {
   return (
-    <RecoilRoot>
-      <HREHeader/>
-      <HREAwards/>
-      <HREProperties/>
-      <HREValuation/>
-      <HREReasons/>
-    </RecoilRoot>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HREPage/>}/>
+        <Route path='/contact' element={<HREForm/>}/>
+      </Routes>
+    </BrowserRouter>
+);
 }
 
 export default App;
