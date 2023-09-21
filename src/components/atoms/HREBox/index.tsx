@@ -19,6 +19,7 @@ export default function HREBox(props: any) {
       minWidth={props.minWidth}
       maxWidth={props.maxWidth}
       padding={props.padding}
+      margin={props.margin}
       gap={props.gap}
     >
       {props.value}

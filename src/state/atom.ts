@@ -59,3 +59,8 @@ export const reasonsState = atom<string[]>({
   key: 'reasonsState',
   default: ['23 Estate Agents', '$5B Sales since 1995', '10 Cities served', '2000+ Sales transactions']
 })
+
+export const awardsState = atom<string[]>({
+  key: 'awardsState',
+  default: ['Great Workplace for Diversity', 'Real Estate Agency of the Year', 'Most Admired Company']
+})

@@ -12,6 +12,9 @@ export default function HRECards(props: any) {
     height={props.height}
     width={props.width}
     textAlign={props.textAlign}
+    alignItems={props.alignItems}
+    justifyContent={props.justifyContent}
+    display={'flex'}
     >
       {props.value}
     </Box>

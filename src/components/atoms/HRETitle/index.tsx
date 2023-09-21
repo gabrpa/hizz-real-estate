@@ -11,6 +11,8 @@ export default function HRETitle(props: any) {
         color={props.color}
         textAlign={props.textAlign}
         padding={'0px 50px'}
+        paddingTop={'50px'}
+        paddingY={props.paddingY}
         >
           {props.value}
       </Typography>
