@@ -31,7 +31,7 @@ export default function HREProperties() {
                   flexDirection={'row'}
                   alignItems={'center'}
                   justifyContent={'center'}
-                  padding={'50px 0px'}
+                  padding={'50px 50px'}
                   gap={'50px'}
                   value={<>
                           {properties.map(property => (
