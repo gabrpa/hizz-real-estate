@@ -1,36 +1,62 @@
-import styles from './HREReasons.module.scss'
-import { Typography } from "@mui/material";
+import useListReasons from '../../state/hooks/useListReasons';
+import HRECards from '../atoms/HRECards';
+import HRETitle from '../atoms/HRETitle';
+import { Box, Typography } from "@mui/material";
 
 export default function HREReasons() {
+
+  const reasons = useListReasons();
+
   return (
-    <section className={styles.reasons}>
-        <div>
-          <Typography 
-            variant='h3'
-            component={'h3'}
-            fontFamily={'Playfair Display, serif'}
-            color={'#646257'}
-            >
-            <p>Why choose</p> 
-            <p>Hizz Real Estate</p>
-          </Typography>
-        </div>
-        <div>
-          <ul className={styles.reasons__ul}>
-            <li>
-              <img src='/assets/images/reasons1.png' alt='reason number 1'></img>
-            </li>
-            <li>
-            <img src='/assets/images/reasons2.png' alt='reason number 2'></img>
-            </li>
-            <li>
-            <img src='/assets/images/reasons3.png' alt='reason number 3'></img>
-            </li>
-            <li>
-            <img src='/assets/images/reasons4.png' alt='reason number 4'></img>
-            </li>
-          </ul>
-        </div>
-    </section>
+    <Box sx={{
+      backgroundColor: '#fffef7',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '100vh',
+      minWidth: '100vw',
+      
+    }}>
+      <Box sx={{
+        margin: '100px',
+      }}
+      >
+        <HRETitle
+          color={'#646257'}
+          value={'Why choose Hizz Real Estate'}
+          textAlign={'center'}
+        />
+        </Box>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '50px',
+          paddingY: '50px',
+          }}>
+        {reasons.map((reason) => (
+          <HRECards
+            height={150}
+            width={200}
+            textAlign={'center'}
+            value={<>
+                    <Typography
+                      sx={{
+                        fontSize: 22,
+                        fontFamily: 'DM Sans, sans-serif',
+                        fontWeight: 'bold',
+                      }}
+                      color="#626257"
+                    >
+                      {reason}
+                    </Typography>
+                  </>}
+          />
+        ))}
+      </Box>
+    </Box>
   )
 }

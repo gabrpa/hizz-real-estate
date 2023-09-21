@@ -1,38 +1,33 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import styles from './HRETestimonials.module.scss'
 import useListTestimonials from '../../state/hooks/useListTestimonials';
+import HRETitle from '../atoms/HRETitle';
+import HRECards from '../atoms/HRECards';
 
 export default function HRETestimonials() {
 
   const testimonials = useListTestimonials()
 
   return (
-    <section className={styles.section}>
       <Box sx={{
         backgroundColor: '#e4e2d7',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        textAlign: 'center',
-        height: '100vh',
-        width: '100vw',
+        minHeight: '100vh',
+        minWidth: '100vw',
+        paddingY: '50px'
       }}>
         <Box sx={{
-          margin: '50px',
+          margin: '100px',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-          <Typography
-            padding={'50px'}
-            variant='h3'
-            component={'h3'}
-            fontFamily={'Playfair Display, serif'}
+          <HRETitle
+            value={'Client Testimonials'}
             color={'#646257'}
-          >
-            Client Testimonials
-          </Typography>
+          />
         </Box>
         <Box sx={{
           display: 'flex',
@@ -41,35 +36,36 @@ export default function HRETestimonials() {
           justifyContent: 'center',
           alignItems: 'center',
           gap: '50px',
-        }}>
+          }}
+        >
         {testimonials.map(testimonial => (
-            <Box
-              sx={{
-                padding: '50px 50px',
-                display: 'flex',
-                flexDirection: 'column',
-                width: 200,
-                height: 300,
-                textAlign: 'left',
-                border: '1px solid #646257',
-                '&:hover': {
-                  opacity: [0.9, 0.8, 0.7],
-                },
-              }}
-              >   
-              <Typography 
-                sx={{ fontSize: 14 }}
-                color="text.secondary" gutterBottom
-                >
-                {testimonial.testimonial}
-              </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                 - {testimonial.name}
-              </Typography>
-            </Box>
+            <HRECards
+              height={400}
+              width={300}
+              value={<>
+                      <Typography
+                        sx={{
+                          fontSize: 20,
+                          fontFamily: 'DM Sans, sans-serif',
+                        }}
+                        color="#626257"
+                      >
+                        {testimonial.testimonial}
+                      </Typography>
+                      <Typography sx={{ 
+                        fontSize: 22,
+                        fontFamily: 'DM Sans, sans-serif',
+                        fontWeight: 'bold'
+                        }} 
+                      color="#626257">
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                         - {testimonial.name}
+                      </Typography>
+                    </>}
+            >
+            </HRECards>
           ))}
         </Box>
         </Box>
-    </section>
   );
 }

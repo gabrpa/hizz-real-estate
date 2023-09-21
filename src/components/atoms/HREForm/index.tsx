@@ -1,10 +1,7 @@
-import HREButton from '../HREButton';
-import styles from './HREForm.module.scss'
-import { Box, Container, ListItem, Stack, TextField, Typography } from "@mui/material";
+import { Box, Container, TextField, Typography } from "@mui/material";
 
 export default function HREForm() {
   return (
-    <section className={styles.section}>
       <Box sx={{
         height: '100vh',
         width: '100vw',
@@ -61,11 +58,7 @@ export default function HREForm() {
                 defaultValue=""
               />
           </Box>
-          <HREButton
-            value={'Submit'}
-          />
         </Container>
       </Box>
-    </section>
   )
 }

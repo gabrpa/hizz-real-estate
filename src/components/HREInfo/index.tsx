@@ -5,12 +5,12 @@ export default function HREInfo() {
     <Box sx={{
       display: 'flex',
       flexDirection: 'row',
+      flexWrap: 'wrap',
       alignItems: 'center',
       justifyContent: 'left',
       backgroundColor: '#646257',
       gap: '100px',
-      height: '80vh',
-      maxHeight: '100vw',
+      minHeight: '50vh',
       padding: '75px 75px'
     }}>
       <Box sx={{
