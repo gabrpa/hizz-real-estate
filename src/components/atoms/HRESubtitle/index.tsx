@@ -10,6 +10,7 @@ export default function HRESubtitle(props: any) {
         fontWeight={props.fontWeight}
         color={props.color}
         textAlign={props.textAlign}
+        padding={'0px 50px'}
         >
           {props.value}
       </Typography>

@@ -11,6 +11,7 @@ export default function HREInfo() {
       backgroundColor: '#646257',
       gap: '100px',
       minHeight: '50vh',
+      // minWidth: '100vw',
       padding: '75px 75px'
     }}>
       <Box sx={{

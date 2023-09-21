@@ -15,7 +15,7 @@ export default function HREValuation() {
       flexDirection: 'column',
       flexWrap: 'wrap',
       minHeight: '100vh',
-      width: '100vw',
+      minWidth: '100vw',
       justifyContent: 'center',
       alignItems: 'center',
     }}
