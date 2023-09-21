@@ -4,7 +4,7 @@ import { makeStyles } from '@mui/material/styles';
 export default function HRETitle(props: any) {
   return (
     <Box>
-      <Slide direction="down" appear={true} in={true} timeout={2000} >
+      {/* <Slide direction="down" appear={true} in={true} timeout={2000} > */}
         <Typography
           variant='h3'
           component={'h3'}
@@ -18,7 +18,7 @@ export default function HRETitle(props: any) {
           >
             {props.value}
         </Typography>
-      </Slide>
+      {/* </Slide> */}
     </Box>
   )
 }
