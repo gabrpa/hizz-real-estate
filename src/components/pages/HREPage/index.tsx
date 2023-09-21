@@ -5,11 +5,12 @@ import HREReasons from "../../HREReasons";
 import HRETestimonials from "../../HRETestimonials";
 import HREValuation from "../../HREValuation";
 import HREInfo from "../../HREInfo";
+import styles from './HREPage.module.scss'
 
 export default function HREPage() {
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <HREHeader/>
       </header>
       <main>

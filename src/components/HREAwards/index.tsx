@@ -17,7 +17,6 @@ export default function HREAwards() {
       <HREBox
         display={'flex'}
         flexDirection={'column'}
-        flexWrap={'wrap'}
         justifyContent={'center'}
         alignItems={'center'}
         minHeight={'100vh'}
