@@ -31,13 +31,13 @@ export default function HREProperties() {
                   flexDirection={'row'}
                   alignItems={'center'}
                   justifyContent={'center'}
-                  padding={'50px 50px'}
+                  padding={'50px 0px'}
                   gap={'50px'}
                   value={<>
                           {properties.map(property => (
                             <Card sx={{ 
-                              minWidth: 350,
-                              minHeight: 380,
+                              minWidth: 310,
+                              minHeight: 280,
                               backgroundColor: '#646257'
                               }}>
                             <CardMedia
@@ -77,7 +77,7 @@ export default function HREProperties() {
                               justifyContent={'center'}
                             >
                                 <HREButton
-                                  value={'Click here to make an offer!'}
+                                  value={'Learn More'}
                                   onClick={() => navigate('/contact')}
                                   />
                             </Box>

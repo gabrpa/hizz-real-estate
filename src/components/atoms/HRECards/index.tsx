@@ -11,6 +11,8 @@ export default function HRECards(props: any) {
     }}
     height={props.height}
     width={props.width}
+    minHeight={props.minHeight}
+    minWidth={props.minWidth}
     textAlign={props.textAlign}
     alignItems={props.alignItems}
     justifyContent={props.justifyContent}

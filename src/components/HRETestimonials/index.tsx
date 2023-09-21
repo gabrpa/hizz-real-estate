@@ -15,8 +15,7 @@ export default function HRETestimonials() {
         flexDirection: 'column',
         justifyContent: 'center',
         minHeight: '100vh',
-        minWidth: '100vw',
-        paddingY: '50px'
+        minWidth: '100vw'
       }}>
         <Box sx={{
           margin: '100px',
@@ -40,26 +39,20 @@ export default function HRETestimonials() {
         >
         {testimonials.map(testimonial => (
             <HRECards
-              height={400}
-              width={300}
+              height={300}
+              width={250}
+              textAlign={'left'}
               value={<>
                       <Typography
                         sx={{
-                          fontSize: 20,
+                          fontSize: 17,
                           fontFamily: 'DM Sans, sans-serif',
                         }}
                         color="#626257"
                       >
                         {testimonial.testimonial}
-                      </Typography>
-                      <Typography sx={{ 
-                        fontSize: 22,
-                        fontFamily: 'DM Sans, sans-serif',
-                        fontWeight: 'bold'
-                        }} 
-                      color="#626257">
-                      <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                         - {testimonial.name}
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        {testimonial.name}
                       </Typography>
                     </>}
             >
