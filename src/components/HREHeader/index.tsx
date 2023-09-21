@@ -3,7 +3,7 @@ import HREButton from '../atoms/HREButton'
 import HRETitle from '../atoms/HRETitle'
 import HRESubtitle from '../atoms/HRESubtitle'
 import HREBox from '../atoms/HREBox'
-import Image from './header.png'
+import Image from './banner2.jpg'
 
 export default function HREHeader() {
   return (  
