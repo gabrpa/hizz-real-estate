@@ -42,6 +42,8 @@ export default function HREReasons() {
             height={150}
             width={200}
             textAlign={'center'}
+            alignItems={'center'}
+            justifyContent={'center'}
             value={<>
                     <Typography
                       sx={{

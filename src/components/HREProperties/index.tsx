@@ -38,6 +38,7 @@ export default function HREProperties() {
                             <Card sx={{ 
                               minWidth: 350,
                               minHeight: 380,
+                              backgroundColor: '#646257'
                               }}>
                             <CardMedia
                               component="img"
@@ -46,7 +47,7 @@ export default function HREProperties() {
                               image={property.image}
                             />
                             <CardContent>
-                              <Typography 
+                              <Typography
                                 gutterBottom 
                                 variant="h5" 
                                 component="div"
@@ -56,14 +57,14 @@ export default function HREProperties() {
                               </Typography>
                               <Typography 
                                 variant="body2"
-                                color="text.secondary"
+                                color="#fffef7"
                                 fontFamily={'DM Sans, sans-serif'}
                                 >
                                 {property.type}
                               </Typography>
                               <Typography 
                                 variant="body2" 
-                                color="text.secondary"
+                                color="#fffef7"
                                 fontFamily={'DM Sans, sans-serif'}
                                 >
                                 {property.price}
