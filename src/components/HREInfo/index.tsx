@@ -9,10 +9,10 @@ export default function HREInfo() {
       alignItems: 'center',
       justifyContent: 'left',
       backgroundColor: '#646257',
-      gap: '100px',
-      minHeight: '50vh',
+      gap: '50px',
+      minHeight: '40vh',
       // minWidth: '100vw',
-      padding: '75px 75px'
+      padding: '50px 50px'
     }}>
       <Box sx={{
         height: 300,
