@@ -35,6 +35,7 @@ export default function HRETestimonials() {
           justifyContent: 'center',
           alignItems: 'center',
           gap: '50px',
+          paddingY: '50px',
           }}
         >
         {testimonials.map(testimonial => (

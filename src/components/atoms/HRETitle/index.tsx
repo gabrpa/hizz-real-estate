@@ -1,10 +1,9 @@
-import { Box, Slide, Typography } from "@mui/material";
-import { makeStyles } from '@mui/material/styles';
+import { Box, Typography } from "@mui/material";
+
 
 export default function HRETitle(props: any) {
   return (
     <Box>
-      {/* <Slide direction="down" appear={true} in={true} timeout={2000} > */}
         <Typography
           variant='h3'
           component={'h3'}
@@ -18,7 +17,6 @@ export default function HRETitle(props: any) {
           >
             {props.value}
         </Typography>
-      {/* </Slide> */}
     </Box>
   )
 }
